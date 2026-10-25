@@ -1,4 +1,4 @@
-Project Name	A Multimodal AI System for Short-Form Video Marketing Analysis
+AI Trending Video Analyzer: A Multimodal AI System for Short-Form Video Marketing Analysis
 
 Domain	Multimodal AI
 
