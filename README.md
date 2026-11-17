@@ -1,110 +1,61 @@
-AI Trending Video Analyzer: A Multimodal AI System for Short-Form Video Marketing Analysis
+## Problem Statement
 
-Domain	Multimodal AI
+Small businesses, marketers, and content creators find it difficult to systematically analyze marketing techniques in short-form videos. Identifying hooks, messaging, emotions, video structure, and CTAs manually can be time-consuming and subjective.
 
-Problem Statement	Small businesses, marketers and content creators usually find it hard to systematically analyze the marketing techniques employed in short-form videos. Manual identification of elements like hooks, key messaging, emotions, structure of the video and call-to-action (CTAs) can take time and be subjective
+This project aims to develop a multimodal AI system that analyzes uploaded short-form videos using speech recognition, visual analysis, and LLMs.
 
+## Evidence of the Problem
 
+- Short-form video advertising research shows that content attributes such as entertainment and advertising strategies are linked to consumer engagement — *Journal of Retailing and Consumer Services*. [https://www.sciencedirect.com/science/article/pii/S0969698922002636](https://www.sciencedirect.com/science/article/pii/S0969698922002636)
+- TikTok Creative Codes highlights video structure, attention, sound, and other creative principles as important factors in short-form advertising. [https://ads.tiktok.com/business/en-US/creative-codes](https://ads.tiktok.com/business/en-US/creative-codes)
 
-This project aims to develop an AI system for analysis short-form videos uploaded to the platform through speech recognition, visual analysis and large language models (LLMs)
+## Initial Related Work / Existing Solutions
 
-Evidence of the Problem	Evidence 1: 
+- **TikTok Creative Codes** provides guidelines for attention, video structure, sound, and creative techniques. **Limitation:** requires users to manually apply these principles when evaluating videos. [https://ads.tiktok.com/business/en-US/creative-codes](https://ads.tiktok.com/business/en-US/creative-codes)
+- **Google ABCDs of Effective Video Ads** provides creative principles for effective video advertising. **Limitation:** does not automatically analyze uploaded videos. [https://services.google.com/fh/files/misc/formarketingshortsabcdsonesheeters.pdf](https://services.google.com/fh/files/misc/formarketingshortsabcdsonesheeters.pdf)
 
-Studies on short form videos advertisements have found that content attributes such as entertainment and the use of advertising strategies, are linked to consumer engagement. This indicated the need to study the creativity attributes present in marketing videos
+## Engineering Gap / Limitation
 
+Existing marketing guidelines provide useful principles for creating short-form videos, but applying these principles to individual videos remains largely manual. This creates a need for an automated system combining **audio transcription, visual analysis, and multimodal AI** to identify and explain marketing techniques.
 
+## Project Objectives
 
-Source / citation:
+- **O1:** To design a multimodal AI pipeline for extracting and processing audio and visual data from uploaded short-form videos.
+- **O2:** To develop an AI-based system for detecting hooks, messages, emotional appeals, video structures, and CTAs.
+- **O3:** To evaluate the system's accuracy, evidence, latency, and cost using manually labelled short-form videos.
 
-Exploring the factors influencing consumer engagement behavior regarding short-form video advertising. Journal of Retailing and Consumer Services.
+## Target Users
 
-https://www.sciencedirect.com/science/article/pii/S0969698922002636
+Small business owners, digital marketers, and content creators who want to analyze short-form promotional videos and understand their marketing techniques.
 
+## Data Sources
 
+- **TikTok Creative Codes** — Marketing guidelines covering hooks, video structure, sound, and creative techniques. [https://ads.tiktok.com/business/library/TikTok_CreativeCodes_May2023.pdf](https://ads.tiktok.com/business/library/TikTok_CreativeCodes_May2023.pdf)
+- **Pitt Ads Dataset (Hussain et al., CVPR 2017)** — 3,477 video advertisements with annotations for topics, sentiments, and persuasive messages. [https://people.cs.pitt.edu/~kovashka/ads/](https://people.cs.pitt.edu/~kovashka/ads/)
+- **TikTok Creative Center — Top Ads** — Public collection of high-performing TikTok advertisements for potential testing. [https://ads.tiktok.com/business/creativecenter/](https://ads.tiktok.com/business/creativecenter/)
 
-Evidence 2:
+## Different from EduAdvisor
 
-Creative Codes of TikTok considers aspects such as video structure, attention stimulation, sound, and other principles as essential consideration in short-form video advertisements. Such considerations entail going beyond the basics of the views and likes.
+While EduAdvisor extracts information from academic resources to answer student queries, the AI Trending Video Analyzer analyzes **multimodal video content**, including frames and speech transcriptions, to identify marketing techniques.
 
+## Responsible AI Risks
 
+- **AI Hallucination:** The AI may detect marketing elements that are not present. **Solution:** Provide timestamps, supporting evidence, and uncertain classifications.
+- **Wrong or Biased Interpretation:** The AI may misunderstand emotional, cultural, or marketing aspects. **Solution:** Use clear classification instructions, annotated examples, and explanations for results.
 
-Source / citation:
+## Weekly Progress
 
-TikTok for Business — Creative Codes.
-
-https://ads.tiktok.com/business/en-US/creative-codes
-
-
-
-Initial Related	Study / Solution 1: TikTok Creative Codes
-
-Source / citation:
-
-https://ads.tiktok.com/business/en-US/creative-codes
-
-Key limitation: Provides marketing guidelines but does not directly offer automated, evidence based analysis uploaded videos.
-
-
-
-Study / Solution 2: Google — ABCDs of Effective Video Ads
-
-Source / citation:
-
-https://services.google.com/fh/files/misc/formarketingshortsabcdsonesheeters.pdf
-
-Key limitation: Provides creative principles for effective video advertising but requires users to manually apply them when evaluating video content.
-
-Engineering Gap / Limitations	The current guidelines for marketing, as well as marketing research, provide valuable information on how video content should be made, yet it is difficult to analyze individual videos based on such frameworks, which calls for a need to develop an automatic system that will integrate audio transcription, image processing, and interpretation by AI algorithms.
-
-Initial Project Objectives	Objective O1: To design a multi-modal AI pipeline for extraction and processing of audio and visual data of uploaded short-form videos.
-
-
-
-Objective O2: To create an AI-based video analysis system capable of detecting hooks, messages, emotional appeals, video structures, and call-to-action messages by means of multi-modal AI and public marketing guides.
-
-
-
-Objective O3: To analyze the accuracy, evidence, latency, and cost of the system by using manually label short-form videos.
-
-Target Users	Small business owners, digital marketers, and content creators who want to analyze short-form promotional videos and improve their understanding of video marketing strategies.
-
-Data Sources	Source 1: TikTok Creative Codes
-
-Official marketing guidelines covering attention-grabbing hooks, video structure, sound, and creative techniques. Used as reference knowledge for AI-based video analysis.
-
-URL: https://ads.tiktok.com/business/library/TikTok\_CreativeCodes\_May2023.pdf
-
-
-
-Source 2: Pitt Ads Dataset (Hussain et al., CVPR 2017)
-
-An academic advertising dataset containing 3,477 video advertisements with human annotations for topics, sentiments, and persuasive messages. Intended for evaluating the AI system's video understanding and marketing-element identification, subject to video availability and usage permissions.
-
-URL: https://people.cs.pitt.edu/\~kovashka/ads/
-
-
-
-Source 3: TikTok Creative Center — Top Ads
-
-A public collection of high-performing TikTok advertisements. Potentially useful for identifying realistic short-form promotional videos for testing, subject to platform access and usage permissions.
-
-URL: https://ads.tiktok.com/business/creativecenter/
-
-
-
-Different from EduAdvisor	While EduAdvisor works towards extracting information from academic resources to respond to queries posed by students, the AI Trending Video Analyzer analyzes multimedia content like video frames and transcriptions of voice over to detect marketing tactics.
-
-Responsible AI Risks	Risk 1 – AI Hallucination: The AI might erroneously detect marketing components in the video that don’t exist.
-
-Solution: Provide timestamp support and require either transcripts or visual proof, as well as room for undetectable and uncertain classifications.
-
-
-
-Risk 2 – Wrong or Biased Interpretation: The AI might misunderstand the emotional appeal, cultural aspects, or marketing message.
-
-Solution: Include clear classification instructions, annotated sample cases, and explanations for AI results.
-
-
-
-
-
+| **Week** | **Focus** | **Deliverable** | **Status** |
+|---|---|---|---|
+| W1 | Project scope and problem definition | Project scope, problem evidence and initial research | ✅ |
+| W2 | Requirements and system architecture | Evaluation criteria and architecture decisions | ✅ |
+| W3 | Data sources and dataset preparation | Dataset investigation, selection and data pipeline planning | ✅ |
+| W4 | Video extraction pipeline | Video metadata, frames, audio and speech extraction | 🔄 |
+| W5 | Multimodal video analysis | Visual, speech and OCR analysis pipeline | ⬜ |
+| W6 | Marketing element detection | Hook, messaging, emotion, structure and CTA detection | ⬜ |
+| W7 | Evidence and grounding | Timestamped evidence and uncertainty handling | ⬜ |
+| W8 | Model evaluation | Accuracy evaluation using manually labelled videos | ⬜ |
+| W9 | Performance evaluation | Latency and cost evaluation | ⬜ |
+| W10 | System integration | Integrated video analysis pipeline | ⬜ |
+| W11 | Testing and refinement | Error analysis and system improvements | ⬜ |
+| W12 | Final evaluation and documentation | Final results, README, report and demonstration | ⬜ |
