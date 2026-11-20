@@ -1,0 +1,17 @@
+{
+  "pipeline_version": "week3-v1",
+  "generated_at_utc": "2026-11-20T02:17:30.972894+00:00",
+  "records": [
+    {
+      "source_id": "S01",
+      "source_filename": "vadb_train.csv",
+      "source_sha256": "823d4307e2bbb6ea1200e17d2fdee40c0a8315b9ef47ae52b9905306c2e7ca50",
+      "prepared_output": "data/processed/prepared_table.csv",
+      "prepared_sha256": "28e1d2fe8bf4c3dc9409daa43f0f859aac97fba12be9dbd1a4507653101be692",
+      "processing_note": "CSV preparation: removed four unintended Unnamed columns; preserved all 10,488 records and original missing values; no duplicate removal or text trimming.",
+      "source_version": "Not verified",
+      "access_rights": "Not verified",
+      "status": "Prepared; quality review pending"
+    }
+  ]
+}

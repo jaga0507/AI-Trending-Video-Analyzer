@@ -1,0 +1,93 @@
+{
+  "pipeline_version": "week3-v1",
+  "generated_at_utc": "2026-11-20T02:18:00.366925+00:00",
+  "data_type": "tabular",
+  "configuration": {
+    "remove_exact_duplicates": false,
+    "trim_text": false,
+    "keep_columns": [
+      "video_id",
+      "score",
+      "composition",
+      "shotsize",
+      "lighting",
+      "visualtone",
+      "color",
+      "depthoffield",
+      "expression",
+      "movement",
+      "costume",
+      "makeup",
+      "label"
+    ]
+  },
+  "processing_method": "Retained 13 expected VADB columns; excluded four unintended Unnamed columns; remove_exact_duplicates=False; trim_text=False; preserved missing values.",
+  "sources": [
+    {
+      "path": "/content/week3_project/data/raw/vadb_train.csv",
+      "sha256": "823d4307e2bbb6ea1200e17d2fdee40c0a8315b9ef47ae52b9905306c2e7ca50"
+    }
+  ],
+  "outputs": [
+    "/content/week3_project/data/pipeline_v1/tabular/prepared_table.csv"
+  ],
+  "source_output_mapping": [
+    {
+      "source": "/content/week3_project/data/raw/vadb_train.csv",
+      "output": "/content/week3_project/data/pipeline_v1/tabular/prepared_table.csv"
+    }
+  ],
+  "inspection": {
+    "rows": 10488,
+    "columns": [
+      "video_id",
+      "score",
+      "composition",
+      "shotsize",
+      "lighting",
+      "visualtone",
+      "color",
+      "depthoffield",
+      "expression",
+      "movement",
+      "costume",
+      "makeup",
+      "label",
+      "Unnamed: 13",
+      "Unnamed: 14",
+      "Unnamed: 15",
+      "Unnamed: 16"
+    ],
+    "missing": {
+      "video_id": 0,
+      "score": 0,
+      "composition": 0,
+      "shotsize": 0,
+      "lighting": 0,
+      "visualtone": 0,
+      "color": 0,
+      "depthoffield": 0,
+      "expression": 2355,
+      "movement": 2355,
+      "costume": 2355,
+      "makeup": 2355,
+      "label": 0,
+      "Unnamed: 13": 10488,
+      "Unnamed: 14": 10488,
+      "Unnamed: 15": 10488,
+      "Unnamed: 16": 10487
+    },
+    "exact_duplicates": 0
+  },
+  "validation": {
+    "output_count": 1,
+    "output_sha256": [
+      "28e1d2fe8bf4c3dc9409daa43f0f859aac97fba12be9dbd1a4507653101be692"
+    ],
+    "output_bytes": [
+      1258187
+    ]
+  },
+  "source_version": "Not verified",
+  "access_rights": "Not verified — check before sharing"
+}
