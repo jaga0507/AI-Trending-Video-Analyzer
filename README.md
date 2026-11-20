@@ -34,6 +34,16 @@ Small business owners, digital marketers, and content creators who want to analy
 - **Pitt Ads Dataset (Hussain et al., CVPR 2017)** — 3,477 video advertisements with annotations for topics, sentiments, and persuasive messages. [https://people.cs.pitt.edu/~kovashka/ads/](https://people.cs.pitt.edu/~kovashka/ads/)
 - **TikTok Creative Center — Top Ads** — Public collection of high-performing TikTok advertisements for potential testing. [https://ads.tiktok.com/business/creativecenter/](https://ads.tiktok.com/business/creativecenter/)
 
+## Dataset Attribution
+
+This project uses the VADB (Video Aesthetics Database) dataset by BestiVictoryLab.
+
+- **Source:** https://huggingface.co/datasets/BestiVictoryLab/VADB
+- **Licence:** CC BY-NC 4.0
+- **Modifications:** Four unintended columns were excluded during data preparation. Original records and missing values were preserved.
+
+The dataset is used for non-commercial academic and research purposes. Original dataset rights and licence conditions remain applicable.
+
 ## Different from EduAdvisor
 
 While EduAdvisor extracts information from academic resources to answer student queries, the AI Trending Video Analyzer analyzes **multimodal video content**, including frames and speech transcriptions, to identify marketing techniques.
